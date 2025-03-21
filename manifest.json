@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 3,
     "permissions": ["activeTab", "scripting", "tabs", "storage"],
-    "host_permissions": ["https://www.youtube.com/watch?=*"],
+    "host_permissions": ["https://www.youtube.com/*"],
     "action": {
         "default_popup": "src/popup/popup.html",
         "default_icon": "icon.png"
@@ -14,7 +14,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/watch?=*"],
+            "matches": ["https://www.youtube.com/*"],
             "js": ["src/popup/content.js"]
         }
     ]
